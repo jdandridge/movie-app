@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Movie App</title>
-  </head>
-  <body>
-    <h1>homepage</h1>
-  </body>
+{% load static %}
+
+
+<html>
+	<head>
+        <title>My Movies</title>
+        {% include 'movies/styles/css.html' %}
+	</head>
+
+    <body>
+    	<div class="wrapper">
+        {% include 'movies/nav.html' %}
+
+          {% include 'movies/list_result.html' %}
+
+
+    	</div>
+
+        {% include "movies/create-modal.html" %}
+
+
+        <!-- Optional JavaScript -->
+        {% include 'movies/styles/js.html' %}
+    </body>
 </html>
