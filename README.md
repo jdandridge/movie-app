@@ -1,2 +1,2 @@
 # movie-app
-A movie database
+A movie database using airtable
