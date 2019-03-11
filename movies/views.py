@@ -28,6 +28,7 @@ def create(request):
         }
 
         try:
+            # insert adds to the database
             response = AT.insert(data)
             messages.success(request, 'New movie added: {}'.format(response['fields'].get('Name')))
         except Exception as e:
